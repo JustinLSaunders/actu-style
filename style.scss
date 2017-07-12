@@ -1,0 +1,97 @@
+/*	.user_content h2:not(.course-title){
+	  font-size: 1.5rem;
+	  padding: 5px 10px;
+	  margin: 30px 0 0 0;
+	  font-weight: bold;
+	  color: #fff;
+	  background: #268180;
+	}*/
+
+$h2-background: #268180;
+
+.user_content h2{
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  margin: 30px 0 0 0;
+  font-weight: bold;
+  color: #fff;
+  background: $h2-background;
+}
+
+.user_content h3{
+  margin-top: 20px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  background: #e6e7e9;
+  padding: 5px 10px;
+  color: black;
+}
+
+.user_content .homepage-copy{
+  margin: .5rem 0;
+  padding: 0 2% .5rem 2%;
+  background: #f7f7f7;
+  border: 1px solid #dbdbdb;
+}
+
+.user_content div.video, .user_content div.video1, .user_content div.video2{
+  background: #e6e7e9;
+  padding: .5rem 0;
+  margin: 8px 1%;
+}
+
+.user_content div.video > div, .user_content div.video1 > div, .user_content div.video2 > div{
+  position: relative;
+  margin: 5px 2%;
+  width: 96%;
+  height: 0;
+  padding-bottom: 54%;
+}
+
+.user_content div.video > h1, .user_content div.video > h2, .user_content div.video > h3, .user_content div.video > h4, .user_content div.video > h5, .user_content div.video > h6, .user_content div.video1 > h1, .user_content div.video1 > h2, .user_content div.video1 > h3, .user_content div.video1 > h4, .user_content div.video1 > h5, .user_content div.video1 > h6, .user_content div.video2 > h1, .user_content div.video2 > h2, .user_content div.video2 > h3, .user_content div.video2 > h4, .user_content div.video2 > h5, .user_content div.video2 > h6{
+  padding: 0 2%;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  background: none;
+}
+
+.user_content div.video * iframe, .user_content div.video1 * iframe, .user_content div.video2 * iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.user_content div.video > p, .user_content div.video1 > p, .user_content div.video2 > p{
+  margin: .5rem 2%;
+}
+
+.user_content .reading{
+  margin-right: 2%;
+}
+
+.user_content .reading > li, .user_content .reading > p{
+  padding-left: 22px;
+  text-indent: -22px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 480px){
+  .user_content div.video1{
+    display: inline-block;
+    width: 48%;
+    margin: 8px 1% 8px 1%;
+    vertical-align:top;
+  }
+
+  .user_content div.video2{
+    display: inline-block;
+    width: 48%;
+    margin: 8px 1% 8px 0;
+    vertical-align:top;
+  }
+}
